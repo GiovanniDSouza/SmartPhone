@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script src="iphone.js"></script>
+    <script src="iphoneOne.js"></script>
+</head>
+<body>
+    <div class="container">
+       
+      <div class="telaInicial">
+        <div class="botaoBloqueia"></div>
+        <div class="hour">
+            <p id="time">12:12</p>
+        </div>
+        <div class="bateria">
+            <i style="font-size:18px" class="fa" id="sinal">&#xf012;</i>
+            <i style="font-size:18px" class="fa">&#xf1eb;</i>
+            <i style="font-size:18px" class="fa">&#xf240;</i>
+
+        </div>
+        <div class="camera">
+            <div class="cameraOne">
+                <div class="cameraTwo">
+                </div>
+            </div>
+            <div class="som">
+            </div>
+        </div>
+        <div class="iconsTela">
+            <i style="font-size:24px" class="fa" id="cam">&#xf030;</i>
+            <i style="font-size:24px" class="fa" id="instagram">&#xf16d;</i>
+            <i style="font-size:24px" class="fa" id="facebook">&#xf082;</i>
+            <i style="font-size:24px" class="fa" id="mensagem">&#xf075;</i>
+            <a href="https://www.youtube.com/"><i style="font-size:24px" class="fa" id="youTube">&#xf16a;</i></a>
+            <a href="login.html"><p class="netflix">N</p></a>
+            <i style="font-size:24px" class="fa" id="twi">&#xf099;</i>
+            <i style="font-size:30px" class="fa" id="spotify">&#xf1bc;</i>
+            <span class="icon-wrapper" data-date="2022-09-26" id="galeria">
+                <img alt="Photos app icon" class="icon" width="64" height="64" src="https://cdn.jim-nielsen.com/ios/512/photos-2022-09-26.png" srcset="https://cdn.jim-nielsen.com/ios/1024/photos-2022-09-26.png 2x">
+              </span>
+        </div>
+        <div class="circulo">
+            <i style="font-size:28px" class="fa" id="phone">&#xf095;</i>
+            <i style="font-size:28px" class="fa" id="safari">&#xf267;</i>
+            <i style="font-size:28px" class="fa" id="whatsApp">&#xf232;</i>
+            <i style="font-size:28px" class="fa" id="music">&#xf001;</i>
+            
+        </div>
+      </div>
+    </div>
+    <div class="telabloqueio">
+        <div class="hourOne">
+            <p>TIM</p>
+        </div>
+        <div class="bateriaOone">
+            <i style="font-size:18px" class="fa" id="sinalOnne">&#xf012;</i>
+            <i style="font-size:18px" class="fa">&#xf1eb;</i>
+            <i style="font-size:18px" class="fa">&#xf240;</i>
+
+        </div>
+        <div class="cameraOone">
+            <div class="cameraTwwo">
+                <div class="cameraThhree">
+                </div>
+            </div>
+            <div class="somOne">
+            </div>
+        </div>
+        <div class="telaDebloqueio">
+            <i style="font-size:18px" class="fa" id="lock">&#xf023;</i>
+            <p class="days" id="date">Domingo, 7 de maio</p>
+            <time class="hours"></time>
+           
+            <div class="desbloquea"></div>
+            <i style="font-size:17px" class="fa" id="caam">&#xf030;</i>
+            <div  class="lanp">
+                <img src="https://cdn-icons-png.flaticon.com/512/115/115149.png" id="lan">
+            </div>
+           
+        </div>
+        
+        <div class="namber">
+            <div class="calculator__display" id="resultado">
+                <p class="textCod">Digite o Código</p>
+            </div>
+            <i style="font-size:18px" class="fa" id="loock">&#xf023;</i>
+            <table >                 
+               
+                <tr>
+                    <td><button class="botao " onclick="insert('1')" >1</button></td>
+                    <td><button class="botao" onclick="insert('2')" >2
+                        <p class="textBotao">ABC</p></button></td>
+                    <td><button class="botao" onclick="insert('3')" >3
+                        <p class="textBotao">DEF</p></button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')" >4
+                        <p class="textBotao">GHI</p></button></td>
+                    <td><button class="botao" onclick="insert('5')">5
+                        <p class="textBotao">JKL</p></button></td>
+                    <td><button class="botao" onclick="insert('6')">6
+                        <p class="textBotao">MNO</p></button></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7
+                        <p class="textBotao">PQRS</p></button></td>
+                    <td><button class="botao" onclick="insert('8')">8
+                        <p class="textBotao">TUV</p></button></td>
+                    <td><button class="botao" onclick="insert('9')">9
+                        <p class="textBotao">WXYZ</p></button></td>
+                   
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="clean()" id="apagar">Apagar</td>
+                        <td><button class="botaao" onclick="clean()" id="cancelar">Cancelar</td>
+                    <td colspan="2"><button class="botao" onclick="insert('0')" id="zero">0</button></td>
+                    <td><button class="botao"  id="entre" >Entre</button></td> <!--onclick="insert('#')"-->
+                </tr>
+            </table>
+        </div>
+
+        
+    </div>
+    <div class="telaPreta">
+        <div class="cameraFour">
+            <div class="cameraFive">
+                <div class="cameraSeis">
+                </div>
+            </div>
+            <div class="somFour">
+            </div>
+        </div>
+    </div>
+    <div class="telaGaleria" style="display: none;">
+        <div class="hourt">
+            <p id="timet">12:12</p>
+        </div>
+        <div class="bateriat">
+            <i style="font-size:18px" class="fa" id="sinaln">&#xf012;</i>
+            <i style="font-size:18px" class="fa">&#xf1eb;</i>
+            <i style="font-size:18px" class="fa">&#xf240;</i>
+
+        </div>
+        <div class="cameraFourr">
+            <div class="cameraFivee">
+                <div class="cameraSeiss">
+                </div>
+            </div>
+            <div class="somFourr">
+            </div>
+        </div>
+        <span class="material-symbols-outlined" id="more">
+            add
+            </span>
+        
+        <div class="galeria">
+            <p class="textalbuns">Álbumes</p>
+            <p class="reta"></p>
+        </div>
+        <div class="albuns">
+            <p class="albunsText">Mis álbumes</p>
+            <p class="textalbu">Verlo todo</p>
+            <div class="vai" >
+                <div class="quadradoDeFotos">
+                    <small>Reciente</small>
+                    <p class="namberUnica">21</p>
+                </div>
+                <div class="quadradoDeFotosOne">
+                    <small>WhatsApp</small>
+                    <p class="namberUnica">10</p>
+                </div>
+                <div class="quadradoDeFotosTwo">
+                    <span class="material-symbols-outlined" id="picture">
+                        photo_library
+                        </span>
+                    <i class="fa fa-heart" id="heart"></i>
+                    <small>Favoritos</small>
+                    <p class="namberUnica">0</p>
+                </div>
+                <div class="quadradoDeFotosThree">
+                    <small>Instagram</small>
+                    <p class="namberUnica">5</p>
+                </div>
+            </div>
+           <div class="menugaleria" >
+            <div class="fot">
+                <span class="material-symbols-outlined" id="pictureOne">
+                    photo_library
+                    </span>
+                    <p class="galeriaFoto">Fototeca</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined" id="diagnos">
+                    diagnosis
+                    </span>
+                    <p class="galeriaFor">Para Ti</p>
+            </div>
+            <div>
+                <div class="bh"></div>
+                <span class="material-symbols-outlined" id="awesome">
+                    auto_awesome_motion
+                    </span>
+                    <p class="galeriaAlbu">Álbumes</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined" id="sear">
+                    search
+                    </span>
+                    <p class="galeriaBus">Buscar</p>
+            </div>
+            <div class="botaoBrancoFoto"></div>
+           </div>
+        </div>
+        <div class="fototeca">
+            <div class="vaifototeca" >
+                <div class="quadradoDeFoto section">
+                    
+                </div>
+                <div class="quadradoDeFotoTwo section">
+                   
+                </div>
+                <div class="quadradoDeFotoTheer section">
+                    
+                </div>
+                <div class="quadradoDeFotoFour section">
+                    
+                </div>
+                <div class="quadradoDeFotoFive section">
+                    
+                </div>
+                <div class="quadradoDeFotoSix section">
+                    
+                </div>
+              
+            </div>
+
+            <div class="menugaleriaa">
+                <div class="fott">
+                    <div class="bhh"></div>
+                    <span class="material-symbols-outlined" id="pictureOnee">
+                        photo_library
+                        </span>
+                        <p class="galeriaFotoo">Fototeca</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="diagnoss">
+                        diagnosis
+                        </span>
+                        <p class="galeriaForr">Para Ti</p>
+                </div>
+                <div class="albu">
+                    <div class="bbh"></div>
+                    <span class="material-symbols-outlined" id="awesomee">
+                        auto_awesome_motion
+                        </span>
+                        <p class="galeriaAlbuu">Álbumes</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="searr">
+                        search
+                        </span>
+                        <p class="galeriaBuss">Buscar</p>
+                </div>
+                <div class="botaoBrancoFotos"></div>
+               </div>
+        </div>
+        <!--Recentes fotos dentro do albun-->
+        <div class="fototecaDois" style="display: none;">
+            <div class="vaifototecaDois" >
+                <div class="albuntextDois">
+                    <span class="material-symbols-outlined" id="leftDois">
+                        arrow_back_ios_new
+                    </span>
+                    <p class="umes">Álbumes</p>
+                    <p class="ente">Reciente</p>
+                </div>
+                <div class="quadradoDeFotoUm section">
+                    
+                </div>
+                <div class="quadradoDeFotoDois section">
+                   
+                </div>
+                <div class="quadradoDeFotoTres section">
+                    
+                </div>
+                <div class="quadradoDeFotoQuatro section">
+                    
+                </div>
+                <div class="quadradoDeFotoCinco section">
+                    
+                </div>
+                <div class="quadradoDeFotoSeis section">
+                    
+                </div>
+              
+            </div>
+            <div class="containerr" style="display: none;">
+                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <button class="arrow-right control" aria-label="Next Image">▶</button>
+                <div class="gallery-wrapper">
+                  <div class="gallery">
+                       <div class="parteE">
+                        <span class="material-symbols-outlined" id="left">
+                            arrow_back_ios_new
+                            </span>
+                        <p class="house">Casa</p>
+                        <p class="tempo">Terça-feira 22:12</p>
+                        <p class="editar">Editar</p>
+                        <div class="circuloEl">
+                            <span class="material-symbols-outlined" id="el">
+                                more_horiz
+                                </span>
+                        </div>
+                       </div>
+                       <img src="https://source.unsplash.com/random?beach"class="item current-item">
+                       <img src="https://source.unsplash.com/random?animal" class="item current-item" id="dois">
+                       <img src="https://source.unsplash.com/random?street" class="item current-item">
+                       <img src="https://source.unsplash.com/random?zoo" class="item current-item">
+                       <img src="https://source.unsplash.com/random?model"  class="item current-item">
+                    
+                    <div class="bloque" style="display: none;">
+                        <img src="https://source.unsplash.com/random?beach" class="iteemm current-iteemm">
+                        <img src="https://source.unsplash.com/random?animal"  class="iteemm current-iteemm">
+                        <img src="https://source.unsplash.com/random?street"  class="iteemm current-iteemm">
+                        <img src="https://source.unsplash.com/random?zoo"  class="iteemm current-iteemm">
+                        <img src="https://source.unsplash.com/random?model"   class="iteemm current-iteemm">
+                    </div>
+                    <div class="parteB">
+                        <img src="https://source.unsplash.com/random?beach" class="itemm current-itemm">
+                        <img src="https://source.unsplash.com/random?animal"  class="itemm current-itemm">
+                        <img src="https://source.unsplash.com/random?street"  class="itemm current-itemm">
+                        <img src="https://source.unsplash.com/random?zoo"  class="itemm current-itemm">
+                        <img src="https://source.unsplash.com/random?model"   class="itemm current-itemm">
+                      
+                        <div class="iconsB">
+                            <span class="material-symbols-outlined" id="ios">
+                                ios_share
+                                </span>
+                            <span class="material-symbols-outlined" id="favorite">
+                                favorite
+                                </span>
+                                <span class="material-symbols-outlined" id="info">
+                                    info
+                                    </span>
+                                    <span class="material-symbols-outlined" id="delete">
+                                        delete
+                                        </span>
+                                        <div class="botaoBrancoFotoos"></div> 
+                        </div>
+                        
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="jh.js"></script>
+</body>
+</html>
