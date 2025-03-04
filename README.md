@@ -1,5 +1,4 @@
 # Smartphone
-https://my-portfolio-20205.netlify.app/
 
  Log
 ===================
